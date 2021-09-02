@@ -1,0 +1,374 @@
+/*=============== content =================================================================*/
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  background-color: white;
+}
+
+
+
+/*=============== text ====================================================================*/
+
+.headertitle { 
+  margin-top: 40vh;
+  font-size: 4vw;
+}
+
+.headerinfo {
+  font-size: 1.5vw;
+}
+
+.headertitle, .headerinfo {
+  width: 49vw;
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+.headertitle, .headerinfo, .sheader-title, .sheader-info {
+  color: black;
+  font-weight: lighter;
+  transition: all 0.9s ease;
+}
+
+.sheader-title, .sheader-info {
+  width: 40vw;
+  margin-right: 5vw; 
+  margin-bottom: 1vh;
+}
+
+.sheader-title {
+  margin-top: 5vw;
+}
+
+.onpic {
+  position: absolute;
+  background: rgb(255, 255, 255, 0.8);
+  width: 80vw;
+  margin: 13vh 10vw auto;
+}
+
+.section-title {
+  margin: 3%;
+}
+
+/*=============== gallery =======================================================*/
+
+.pregallery {
+  max-width: 30vw;
+}
+
+.gallery, .pregallery {
+  margin: 0% 3% 3%;
+}
+
+.gallery-highlight {
+  width: 40vw;
+}
+
+.gallery-preview {
+  display: flex;
+}
+
+.gallery-preview img {
+  width: calc(40vw / 3);
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-preview img:hover {
+  opacity: 1;
+}
+
+/*================ images ===========================================*/
+
+.halfpic {
+  width: 50%;
+  height: 100vh;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.fullpic {
+  
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+}
+
+.arts-d-1 {
+  background-image: url("backgrounds/pp1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*---------- social media tabs ------------------------------------------------------------*/
+
+.icon-bar {
+  position: fixed;
+  bottom: -1%;  
+  right: 0;
+  overflow: auto;
+  z-index: 3;
+  border-top-left-radius: 25pt;
+  border-top-right-radius: 25pt;
+}
+
+.icon-bar a {
+  float:right;
+  display: block;
+  text-align: center;
+  padding: 14px 25px;
+  transition: all 0.3s ease;
+  font-size: 17px;
+}
+
+.icon-bar a:hover {
+  background-color: #34393e;
+}
+
+.fb-icon {
+  background: #3B5998;
+  color: white;
+}
+
+.in-icon {
+  background: #C13584;
+  color: white;
+}
+
+/*--------------------- navbars -------------------------------------------------------*/
+
+/* base styles */
+.nav-shared {
+  background-color: #34393e;
+  font-family: Tahoma;
+  font-size: 17px;
+  color: #ddd5d3;
+  text-align: center;
+}
+
+.nav-shared a {
+  color: #ddd5d3;
+}
+
+.nav-shared a:hover, .nav-shared-dr:hover, .nav-shared-drop {
+  background-color: #41476b;
+  color: #ddd5d3;
+  transition: all 0.3s ease;
+}
+
+.nav-shared-drop a:hover {
+  background-color: #d5bacb;
+  color: #5a5fa6;
+}
+ 
+.artsnav a:hover, .botnav a:hover, .drop-content a:hover, .topnav a:hover {
+  border-radius: 25px;
+}
+
+/* topnav format*/
+.topnav {
+
+  position: fixed;
+  width: 100%;
+  padding-left: calc(100%/6/2);
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.topnav a {
+  float: left;
+  padding: 14px 0;
+  width: calc(100%/6);
+  text-decoration: none;
+}
+
+/* topnav dropdown button */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  width: calc(100%/6);
+}
+
+.dropdown .dropbutton {
+  border: none;
+  outline: none;
+  padding: 14px 0;
+  background-color: inherit;
+  margin: 0; 
+}
+
+.dropdown:hover {
+  border-top-left-radius: 25pt;
+  border-top-right-radius: 25pt;
+}
+
+/* content in dropdown, hidden */	
+.drop-content {
+  display: none;
+  position: fixed;
+  width: calc(100%/6);
+  z-index: 1;
+  border-bottom-left-radius: 25pt;
+  border-bottom-right-radius: 25pt;
+}
+
+.drop-content a {
+  float: none;
+  padding: 14px auto;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+/* when hovered, show dropdown */
+.dropdown:hover .drop-content {
+  display: block;
+}
+
+/* bot button format */
+.botnav {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0; 
+  left: 0;
+  border-top-left-radius: 25pt;
+  border-top-right-radius: 25pt;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.botnav a {
+  float: left;
+  text-decoration: none;
+  padding: 14px 25px;
+}
+
+/*=============== media only ==============================================================*/
+
+@media only screen and (min-width: 900px) {
+
+.mob {
+  display: none;
+  outline: none;
+  border: none;
+}
+
+}
+
+@media only screen and (max-width: 899px) {
+  
+/*---------- hide laptop only ----------*/
+
+.not-mob {
+  display: none;
+  outline: none;
+  border: none;
+}
+
+/*---------- nav related ----------*/
+
+.topnav a, .botnav a, .artsnav a {
+  font-size: 14px;
+}
+
+.botnav a, .artsnav a {
+  padding: 14px 15px;
+}
+
+/*---------- text ----------*/
+
+.left, .right {
+  float: none;
+}
+
+.headertitle { 
+  font-size: 6vw;
+  margin: 15vh 25vw 4vh;
+}
+
+.headerinfo {
+  font-size: 3vw;
+  margin: 0vh 25vw;
+}
+
+.headertitle, .headerinfo {
+  text-align: center;
+}
+
+.headertitle, .headerinfo, .sheader-title, .sheader-info {
+  color: black;
+  font-weight: lighter;
+  transition: all 0.9s ease;
+}
+
+.sheader-title {
+  margin-left: 40vw;
+}
+
+.sheader-info {
+  margin: 1vh 4vw 4vh;
+}
+
+/*------------gallery-------------*/
+
+.pregallery {
+  margin: 2vh 10vw;
+  max-width: 60vw;
+}
+
+.gallery, .pregallery {
+  margin: 2vh 10vw;
+}
+
+.gallery-highlight {
+  max-width: 60vw;
+}
+
+.gallery-highlight {
+  width: 80vw;
+}
+
+.gallery-preview img {
+  width: calc(60vw / 3);
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/*---------- pic ----------*/
+
+.halfpic {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+}
