@@ -1,0 +1,345 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+}
+
+.container {
+  width: 80%;
+  padding: 0 10%;
+}
+
+.section-padding {
+  padding: 5% 15%;
+}
+
+.flex {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-flex-content {
+  align-items: center;
+}
+
+.tr-4s {
+  transition: 0.4s;
+}
+
+
+/**/
+
+#navbar {
+  width: 100%;
+  margin: 0;
+  top: 0;
+  position: fixed;
+  background-color: #202510;
+  z-index: 5;
+  transition: top 0.4s;
+  opacity: 95%;
+}
+
+#navbar h2 {
+  color: white;
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0 20%;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar h2 {
+  padding: 10px 15px;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+#navbar li a:hover {
+  background-color: #111;
+
+}
+
+
+
+
+#header-container {
+  width: 100%;
+  padding-top: 55vh;
+  margin-bottom: 15vh;
+  background-image: url("images/1623.jpg");
+  background-position: 50% 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(40%);
+}
+
+
+#header-info {
+  top: 15vh;
+  z-index: 1;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+}
+
+#header-info a {
+  color: #a7bb6b;
+}
+
+#header-info a:hover {
+  color:#454d2f;
+}
+
+#prof-pic-placement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 37vh;
+  position: absolute;
+  z-index: 2;
+}
+
+#prof-pic-placement img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid white;
+}
+
+
+/**/
+
+.bg-g {
+  background-color: #cfe1d4; /* rgb(216,227,223); */
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 15px 0;
+  overflow: none;
+  justify-content: space-evenly;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 10%;
+  margin: 3% 0;
+  padding: 3vw 0;
+  font-size: 20px;
+  color:#616161;
+  text-align: center;
+  width: 20%;
+  background-color:white;
+}
+
+.s-img img {
+  padding-bottom: 1vh;
+  width: 5vw;
+}
+
+.xs-img img {
+  width: 18px;
+}
+
+.technology {
+  box-shadow: 5px 10px 18px rgb(94, 104, 94);
+}
+
+.tools {
+  box-shadow: 5px 10px 18px #5a6866;
+}
+
+
+
+.edu-section {
+  width: 45%;
+  padding: 5% 0;
+  margin: 5% 2% 2%;
+}
+
+.edu-section img {
+  padding: 10%;
+  border-radius: 30%;
+}
+
+.edu-section .link {
+  color: #5f6b3a;
+}
+
+.edu-section .link:hover {
+  color: #819151;
+}
+
+#download-button a {
+  color: #5f6b3a;
+}
+
+#download-button a:hover {
+  color: #819151;
+}
+
+.work-container {
+  display: flex;
+  margin: 10% 0;
+}
+
+.work-name {
+  width: 20%;
+  margin-right: 5px;
+  text-align: left;
+}
+
+.work-details {
+  width: 80%;
+}
+
+.work-details ul {
+  padding-left: 20px;
+}
+
+.work-pos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+
+/**/
+
+
+#footer-container {
+  width: 100%;
+  padding: 5vh 0 2vh;
+  background-color: #202510;
+  position: absolute;
+  color: white;
+}
+
+#footer-info {
+  width: 55%;
+}
+
+.float-left {
+  text-align: left;
+  width: 80%;
+}
+
+.float-right {
+  text-align: right;
+  width: 20%;
+}
+
+.contact, .icon {
+  color: #a7bb6b;
+}
+
+.contact:hover, .icon:hover {
+  color: #819151;
+}
+
+.icon {
+  font-size: 25px;
+  padding: 3%;
+}
+
+#copyright {
+  padding-top: 5vh;
+  color: #454d2f;
+}
+
+
+/* Medium devices such as tablets (768px and down) */
+@media only screen and (max-width: 1000px) {
+
+  .grid-item {
+    font-size: 16px;
+    width: 25%;
+  }
+
+  .work-container {
+    flex-direction: column;
+  }
+  
+  .work-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .work-details {
+    width: 100%;
+  }
+}
+
+/* Medium devices such as tablets (768px and down) */
+@media only screen and (max-width: 768px) {
+
+  .container {
+    width: 90%;
+    padding: 0 5%;
+  }
+
+  .section-padding {
+    padding: 5% 7%;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  #navbar ul {
+    margin: 0 10%;
+  }
+
+  #header-container {
+    padding-top: 52vh;
+  }
+  
+  #prof-pic-placement img {
+    width: 210px;
+    height: 210px;
+  }
+
+  .icon {
+    font-size: 20px;
+    padding: 1%;
+  }
+
+  .grid-item {
+    font-size: 16px;
+    width: 28%;
+  }
+
+  #footer-info {
+    width: 70%;
+  }
+}
+
