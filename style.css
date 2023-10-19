@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   font-weight: lighter;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 80%;
-  padding: 0 10%;
+  padding: 0% 10%;
 }
 
 .section-padding {
@@ -37,6 +37,13 @@ body {
   transition: 0.4s;
 }
 
+p.mb-hidden {
+  visibility: show;
+}
+
+hr.dt-hidden {
+  display: none;
+}
 
 /**/
 
@@ -80,7 +87,6 @@ body {
 
 #navbar li a:hover {
   background-color: #111;
-
 }
 
 
@@ -106,12 +112,12 @@ body {
   font-weight: bold;
 }
 
-#header-info a {
+#header-info a, .contact, .icon {
   color: #a7bb6b;
 }
 
-#header-info a:hover {
-  color:#454d2f;
+#header-info a:hover, .contact:hover, .icon:hover, .edu-section .link:hover, #download-button a:hover {
+  color: #819151;
 }
 
 #prof-pic-placement {
@@ -142,7 +148,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 15px 0;
+  margin: 10% 0;
   overflow: none;
   justify-content: space-evenly;
 }
@@ -162,7 +168,7 @@ body {
 
 .s-img img {
   padding-bottom: 1vh;
-  width: 5vw;
+  width: 5vh;
 }
 
 .xs-img img {
@@ -177,12 +183,17 @@ body {
   box-shadow: 5px 10px 18px #5a6866;
 }
 
+.left {
+  float: left;
+}
 
+.right {
+ float: right;
+}
 
 .edu-section {
-  width: 45%;
-  padding: 5% 0;
-  margin: 5% 2% 2%;
+  width: 50%;
+  padding: 5% 0%;
 }
 
 .edu-section img {
@@ -190,20 +201,8 @@ body {
   border-radius: 30%;
 }
 
-.edu-section .link {
+.edu-section .link, #download-button a {
   color: #5f6b3a;
-}
-
-.edu-section .link:hover {
-  color: #819151;
-}
-
-#download-button a {
-  color: #5f6b3a;
-}
-
-#download-button a:hover {
-  color: #819151;
 }
 
 .work-container {
@@ -257,13 +256,7 @@ body {
   width: 20%;
 }
 
-.contact, .icon {
-  color: #a7bb6b;
-}
 
-.contact:hover, .icon:hover {
-  color: #819151;
-}
 
 .icon {
   font-size: 25px;
@@ -308,11 +301,24 @@ body {
   }
 
   .section-padding {
-    padding: 5% 7%;
+    padding: 10% 7%;
   }
 
   h2 {
     font-size: 18px;
+  }
+
+  p.mb-hidden {
+    display: none;
+  }
+
+  .dt-hidden {
+    padding-top: 10%;
+    visibility: show;
+  }
+
+  .work-pos {
+    display:block;
   }
 
   #navbar ul {
@@ -336,6 +342,23 @@ body {
   .grid-item {
     font-size: 16px;
     width: 28%;
+  }
+
+  .mb-flex {
+    display: block;
+  }
+  
+  .edu-section {
+    width: 100%;
+  }
+  
+  .edu-section img {
+    padding: 10%;
+    border-radius: 30%;
+  }
+
+  .work-details {
+    overflow-wrap: normal;
   }
 
   #footer-info {
